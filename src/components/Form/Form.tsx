@@ -43,8 +43,9 @@ export const Form = () => {
           control={control}
           rules={{ required: "true" }}
           render={({ field }) => <Input {...field} />}
-        />
+        />{" "}
       </StyledInputGroup>
+
       <ButtonForm type={"submit"} />
     </StyledForm>
   );
