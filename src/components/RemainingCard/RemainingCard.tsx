@@ -1,18 +1,25 @@
 import React from "react";
 import { useBudgetContext } from "../../context/BudgetContext/BudgetContext";
+import { useCurrencyContext } from "../../context/CurrencyContext/CurrencyContext";
 import { useExpensesContext } from "../../context/ExpensesContext/ExpensesContext";
 import { StyledRemainingCard, StyledRemainingText } from "./styles";
 
 export const RemainingCard = () => {
   const { expenses } = useExpensesContext();
   const { budget } = useBudgetContext();
+  const { currentCurrency } = useCurrencyContext();
 
   const remaining =
-    budget - expenses.reduce((total, { cost }) => total + cost, 0);
+    budget - expenses.reduce((total, { cost }) => total + +cost, 0);
 
+  const isOverspending = remaining < 0;
   return (
-    <StyledRemainingCard>
-      <StyledRemainingText>Remaining{remaining}</StyledRemainingText>
+    <StyledRemainingCard $isOverspending={isOverspending}>
+      <StyledRemainingText>
+        {isOverspending
+          ? `Overspending by:${currentCurrency} ${remaining}`
+          : `Remaining:${currentCurrency} ${remaining}`}
+      </StyledRemainingText>
     </StyledRemainingCard>
   );
 };
