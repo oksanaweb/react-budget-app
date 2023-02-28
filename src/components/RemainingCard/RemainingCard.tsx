@@ -17,8 +17,8 @@ export const RemainingCard = () => {
     <StyledRemainingCard $isOverspending={isOverspending}>
       <StyledRemainingText>
         {isOverspending
-          ? `Overspending by:${currentCurrency} ${remaining}`
-          : `Remaining:${currentCurrency} ${remaining}`}
+          ? `Overspending by: ${currentCurrency.value} ${remaining}`
+          : `Remaining: ${currentCurrency.value}${remaining}`}
       </StyledRemainingText>
     </StyledRemainingCard>
   );

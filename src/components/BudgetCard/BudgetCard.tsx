@@ -41,7 +41,7 @@ export const BudgetCard = () => {
       ) : (
         <>
           <StyledTitleBudget>
-            Budget:{currentCurrency.value}
+            Budget: {currentCurrency.value}
             {budget}
           </StyledTitleBudget>
           <StyledButton type="button" onClick={handleEdit}>
