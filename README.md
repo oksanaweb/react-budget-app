@@ -1,46 +1,57 @@
-# Getting Started with Create React App
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+   
+  </a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h3 align="center">Welcome to Your Budget Application!</h3>
 
-## Available Scripts
+  <p align="center">
+   The application calculates your expenses and budget and improve your financial literacy.
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the application</strong></a>
+    <br />
+    <br />
+   </div>
 
-In the project directory, you can run:
+  <img src="./readme/budget.png">
 
-### `npm start`
+<!-- ABOUT THE PROJECT -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## About The Project
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This is a user-friendly budgeting tool designed to help you keep track of your expenses and manage your finances effectively. With this application, you can easily create a budget plan and monitor your spending.
 
-### `npm test`
+Getting started is easy! Simply create a new budget by entering your income and expenses for the month.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+As you make purchases, add them to the application to keep track of your spending. The application will automatically update your budget and show you how much money you have left to spend.
 
-### `npm run build`
+The app will also show if the expenses have been exceeded.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Built With
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
-### `npm run eject`
+![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## The tools that were used in this project:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Typescript
+- React-select
+- React-hook-form
+- Hooks & Custom Hooks
+- Styled-components
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<!-- CONTACT -->
 
-## Learn More
+## Contact
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Aksana Manchuk - [https://www.linkedin.com/in/oksana-manchuk]
+[oxana.manchuk@mail.ru]
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Project Link: [https://github.com/oksanaweb/react-budget-app]
