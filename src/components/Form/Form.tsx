@@ -1,11 +1,15 @@
 import React from "react";
-import { Controller, SubmitHandler, useForm } from "react-hook-form";
-import { useBudgetContext } from "../../context/BudgetContext/BudgetContext";
-import { useExpensesContext } from "../../context/ExpensesContext/ExpensesContext";
-import { ButtonForm } from "../ButtonForm/ButtonForm";
-import { Input } from "../Input/Input";
-import { Title } from "../Title/Title";
-import { StyledForm, StyledInputGroup } from "./styles";
+import ReactDOM from "react-dom";
+import { SubmitHandler, useForm } from "react-hook-form";
+import { useBudgetContext, useExpensesContext } from "context";
+import { ButtonForm, Input, Title } from "components";
+import {
+  StyledError,
+  StyledForm,
+  StyledInputForm,
+  StyledInputGroup,
+} from "./styles";
+import { v4 } from "uuid";
 
 interface FormValues {
   name: string;
@@ -13,7 +17,12 @@ interface FormValues {
 }
 
 export const Form = () => {
-  const { control, handleSubmit, reset } = useForm<FormValues>();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<FormValues>();
   const { addNewExpense } = useExpensesContext();
   const { budget } = useBudgetContext();
 
@@ -22,7 +31,7 @@ export const Form = () => {
       addNewExpense({
         name,
         cost,
-        id: "",
+        id: v4(),
       });
       reset();
     }
@@ -32,20 +41,33 @@ export const Form = () => {
     <StyledForm onSubmit={handleSubmit(onSubmit)}>
       <Title title="Add Expense" />
       <StyledInputGroup>
-        <Controller
-          name="name"
-          control={control}
-          rules={{ required: "name is required" }}
-          render={({ field }) => <Input {...field} />}
+        <StyledInputForm
+          {...register("name", {
+            required: "field is required",
+            maxLength: {
+              value: 15,
+              message: "the field should contain no more than 15 letters",
+            },
+          })}
+          type="text"
+          placeholder="enter name ..."
         />
-        <Controller
-          name="cost"
-          control={control}
-          rules={{ required: "true" }}
-          render={({ field }) => <Input {...field} />}
-        />{" "}
+        {errors.name?.message && (
+          <StyledError>{errors.name.message}</StyledError>
+        )}
+        <StyledInputForm
+          {...register("cost", {
+            required: "field is required",
+            maxLength: { value: 5, message: " max 5 numbers" },
+            valueAsNumber: true,
+          })}
+          type="number"
+          placeholder="enter cost ..."
+        />
+        {errors.cost?.message && (
+          <StyledError>{errors.cost.message}</StyledError>
+        )}
       </StyledInputGroup>
-
       <ButtonForm type={"submit"} />
     </StyledForm>
   );

@@ -24,11 +24,9 @@ const useExpensesContexValue = () => {
       return {
         expenses: [],
         addNewExpense: (newExpense) => {
-          const newExpensePosition = { ...newExpense, id: uuidv4() };
-
           setExpensesContext((ctx) => ({
             ...ctx,
-            expenses: [...ctx.expenses, newExpensePosition],
+            expenses: [...ctx.expenses, newExpense],
           }));
         },
         deleteExpense: (id) => {

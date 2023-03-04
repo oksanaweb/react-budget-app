@@ -5,9 +5,25 @@ const StyledForm = styled.form`
   gap: 30px;
 `;
 
+const StyledInputForm = styled.input`
+  width: 100%;
+  padding: 15px 20px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color: #999999;
+  }
+`;
+
 const StyledInputGroup = styled.div`
   display: grid;
   gap: 20px;
 `;
 
-export { StyledForm, StyledInputGroup };
+const StyledError = styled.span`
+  font-size: 12px;
+`;
+
+export { StyledForm, StyledInputGroup, StyledInputForm, StyledError };

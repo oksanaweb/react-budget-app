@@ -1,6 +1,16 @@
-import React, { InputHTMLAttributes } from "react";
+import { type } from "os";
+import React, {
+  ChangeEvent,
+  HTMLInputTypeAttribute,
+  InputHTMLAttributes,
+} from "react";
+import { UseFormRegister } from "react-hook-form";
 import { StyledInput } from "./styles";
 
-export const Input = (props: InputHTMLAttributes<HTMLInputElement>) => {
-  return <StyledInput {...props} />;
+interface InputType {
+  placeholder: string;
+}
+
+export const Input = ({ placeholder }: InputType) => {
+  return <StyledInput placeholder={placeholder} />;
 };

@@ -1,7 +1,6 @@
 import React from "react";
-import { Badge } from "../Badge/Badge";
-import { ExpenseItem } from "../ExpenseItem/ExpenseItem";
-import { ExpenseProduct } from "../../types/types";
+import { ExpenseItem } from "components";
+import { ExpenseProduct } from "types";
 import { StyledExpenseList } from "./styles";
 
 interface ExpensesListProps {
@@ -12,7 +11,7 @@ export const ExpensesList = ({ expenses }: ExpensesListProps) => {
   return (
     <StyledExpenseList>
       {expenses.map((expense) => (
-        <ExpenseItem key={expense.id} />
+        <ExpenseItem key={expense.id} expense={expense} />
       ))}
     </StyledExpenseList>
   );

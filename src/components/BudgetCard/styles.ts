@@ -25,8 +25,16 @@ const StyledButton = styled.button`
   padding: 5px 20px;
   border-radius: 10px;
   background: #ffffff;
+  color: #000000;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
 `;
 
-const StyledTitleBudget = styled.h3``;
+const StyledTitleBudget = styled.h3`
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+`;
 
 export { StyledBudgetCard, StyledInput, StyledButton, StyledTitleBudget };

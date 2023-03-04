@@ -14,6 +14,9 @@ button {
   border:none;
 }
 
+body {font-family: 'Inter', sans-serif;}
+
+button {font-family:inherit}
   `;
 
 export { GlobalStyles };

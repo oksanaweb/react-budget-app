@@ -1,8 +1,6 @@
 import React from "react";
-import { StyledApp } from "./ui/styles";
-import { Budget } from "./components/Budget/Budget";
-import { Expenses } from "./components/Expenses/Expenses";
-import { Form } from "./components/Form/Form";
+import { StyledApp } from "ui";
+import { Budget, Expenses, Form } from "components";
 
 export const App = () => {
   return (

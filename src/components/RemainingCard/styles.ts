@@ -9,6 +9,7 @@ const StyledRemainingCard = styled.div<{ $isOverspending: boolean }>`
   border-radius: 10px;
   background-color: ${({ $isOverspending }) =>
     $isOverspending ? "#FF0000" : "#ccd5ff"};
+  color: ${({ $isOverspending }) => ($isOverspending ? "#FFFFFF" : "#000000")};
 `;
 
 const StyledRemainingText = styled.p`
