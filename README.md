@@ -15,7 +15,8 @@
     <br />
    </div>
 
-  <img src="./readme/budget.png">
+  <img src="images/budget.png" alt="app">
+
 
 <!-- ABOUT THE PROJECT -->
 
