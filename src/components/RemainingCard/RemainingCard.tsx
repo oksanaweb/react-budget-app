@@ -14,12 +14,14 @@ export const RemainingCard = () => {
   const remaining =
     budget - expenses.reduce((total, { cost }) => total + +cost, 0);
 
+  const remainingOverspent = Math.abs(remaining);
+
   const isOverspending = remaining < 0;
   return (
     <StyledRemainingCard $isOverspending={isOverspending}>
       <StyledRemainingText>
         {isOverspending
-          ? `Overspending by: ${currentCurrency.value} ${remaining}`
+          ? `Overspending by: ${currentCurrency.value}${remainingOverspent}`
           : `Remaining: ${currentCurrency.value}${remaining}`}
       </StyledRemainingText>
     </StyledRemainingCard>
