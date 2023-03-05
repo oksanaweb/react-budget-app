@@ -7,7 +7,6 @@ import { ExpenseItem } from "./ExpenseItem/ExpenseItem";
 import { Expenses } from "./Expenses/Expenses";
 import { ExpensesList } from "./ExpensesList/ExpensesList";
 import { Form } from "./Form/Form";
-import { Input } from "./Input/Input";
 import { InputSearch } from "./InputSearch/InputSearch";
 import { RemainingCard } from "./RemainingCard/RemainingCard";
 import { SpentCard } from "./SpentCard/SpentCard";
@@ -23,7 +22,6 @@ export {
   Expenses,
   ExpensesList,
   Form,
-  Input,
   InputSearch,
   RemainingCard,
   SpentCard,

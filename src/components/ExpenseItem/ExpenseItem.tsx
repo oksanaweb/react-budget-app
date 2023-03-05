@@ -1,5 +1,5 @@
 import React from "react";
-import { useCurrencyContext, useExpensesContext } from "context";
+import { useExpensesContext } from "context";
 import { ExpenseProduct } from "types";
 import { Badge } from "components";
 
@@ -16,7 +16,6 @@ interface ExpenseItemProps {
 
 export const ExpenseItem = ({ expense }: ExpenseItemProps) => {
   const { deleteExpense, expenses } = useExpensesContext();
-  const { currentCurrency } = useCurrencyContext();
 
   const handleButton = () => {
     deleteExpense(expense.id);

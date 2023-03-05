@@ -1,8 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { useBudgetContext, useExpensesContext } from "context";
-import { ButtonForm, Input, Title } from "components";
+import { useExpensesContext } from "context";
+import { ButtonForm, Title } from "components";
 import {
   StyledError,
   StyledForm,
@@ -24,17 +23,14 @@ export const Form = () => {
     formState: { errors },
   } = useForm<FormValues>();
   const { addNewExpense } = useExpensesContext();
-  const { budget } = useBudgetContext();
 
   const onSubmit: SubmitHandler<FormValues> = ({ name, cost }) => {
-    {
-      addNewExpense({
-        name,
-        cost,
-        id: v4(),
-      });
-      reset();
-    }
+    addNewExpense({
+      name,
+      cost,
+      id: v4(),
+    });
+    reset();
   };
 
   return (

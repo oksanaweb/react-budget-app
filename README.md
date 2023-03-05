@@ -5,7 +5,7 @@
    
   </a>
 
-  <h3 align="center">Welcome to Your Budget Application!</h3>
+  <h3 align="center">Welcome to Your Mobile Budget Application!</h3>
 
   <p align="center">
    The application calculates your expenses and budget and improve your financial literacy.
@@ -17,12 +17,11 @@
 
   <img src="images/budget.png" alt="app">
 
-
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
 
-This is a user-friendly budgeting tool designed to help you keep track of your expenses and manage your finances effectively. With this application, you can easily create a budget plan and monitor your spending.
+This is a user-friendly budgeting tool designed to help you keep track of your expenses and manage your finances effectively. With this mobile application, you can easily create a budget plan and monitor your spending.
 
 Getting started is easy! Simply create a new budget by entering your income and expenses for the month.
 

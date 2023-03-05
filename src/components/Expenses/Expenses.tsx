@@ -24,7 +24,7 @@ export const Expenses = () => {
     <StyledExpenses>
       <Title title="Expenses" />
       <InputSearch placeholder="seach..." {...searchValue} />
-      {expenses.length ? (
+      {filteredExpenses.length ? (
         <ExpensesList expenses={filteredExpenses} />
       ) : (
         <EmptyText>Oooops 🙈</EmptyText>
