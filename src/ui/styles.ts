@@ -6,6 +6,8 @@ const StyledApp = styled.div`
   flex-direction: column;
   width: clamp(335px 100% 500px);
   gap: 30px;
+  max-width: 900px;
+  margin: auto;
 `;
 
 export { StyledApp };

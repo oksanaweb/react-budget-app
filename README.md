@@ -1,7 +1,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
    
   </a>
 
@@ -10,7 +9,7 @@
   <p align="center">
    The application calculates your expenses and budget and improve your financial literacy.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the application</strong></a>
+    <a href="#"><strong>Explore the application</strong></a>
     <br />
     <br />
    </div>

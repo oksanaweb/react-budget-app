@@ -54,8 +54,7 @@ export const Form = () => {
         <StyledInputForm
           {...register("cost", {
             required: "field is required",
-            maxLength: { value: 5, message: " max 5 numbers" },
-            valueAsNumber: true,
+            maxLength: { value: 5, message: "max 5 numbers" },
           })}
           type="number"
           placeholder="enter cost ..."
