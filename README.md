@@ -1,9 +1,10 @@
 # react-budget-app
+
 <br />
 <div align="center">
    
   </a>
-
+  <img src="images/logo.png" alt="logo" width="200">
   <h3 align="center">Welcome to Your Mobile Budget Application!</h3>
 
   <p align="center">
