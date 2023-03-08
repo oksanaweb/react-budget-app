@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import cross from "../../assets/icons/cross.svg";
+import close from "../../assets/icons/close.svg";
 
 const StyledExpenseItem = styled.li`
   padding: 15px 20px;
@@ -24,7 +24,8 @@ const StyledItemBox = styled.div`
 const StyledButtonDelete = styled.button`
   width: 15px;
   height: 15px;
-  background: url(${cross});
+  background: url(${close});
+  cursor: pointer;
 `;
 
 export {

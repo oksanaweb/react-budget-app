@@ -16,6 +16,10 @@ export const selectStyles: StylesConfig<CurrencyValue> = {
   }),
   option: (baseStyles, state) => ({
     ...baseStyles,
-    backgroundColor: state.isFocused ? "#7CC6FE" : "white",
+    backgroundColor: state.isSelected
+      ? "rgba(3, 138, 255, 1 )"
+      : state.isFocused
+      ? "rgba(205, 209, 228, 1)"
+      : "transparent",
   }),
 };

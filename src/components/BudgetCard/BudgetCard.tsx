@@ -21,7 +21,9 @@ export const BudgetCard = () => {
     toggleMode();
   };
 
-  const handleEdit = () => toggleMode();
+  const handleEdit = () => {
+    return toggleMode();
+  };
 
   return (
     <StyledBudgetCard>

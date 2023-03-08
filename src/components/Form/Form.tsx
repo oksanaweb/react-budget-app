@@ -21,7 +21,7 @@ export const Form = () => {
     handleSubmit,
     reset,
     formState: { errors },
-  } = useForm<FormValues>();
+  } = useForm<FormValues>({ mode: "onBlur" });
   const { addNewExpense } = useExpensesContext();
 
   const onSubmit: SubmitHandler<FormValues> = ({ name, cost }) => {
@@ -55,8 +55,11 @@ export const Form = () => {
           {...register("cost", {
             required: "field is required",
             maxLength: { value: 5, message: "max 5 numbers" },
+            pattern: {
+              value: /[0-9]/,
+              message: "Please enter a valid cost",
+            },
           })}
-          type="number"
           placeholder="enter cost ..."
         />
         {errors.cost?.message && (

@@ -24,6 +24,7 @@ const StyledInputGroup = styled.div`
 
 const StyledError = styled.span`
   font-size: 12px;
+  color: #ff0000;
 `;
 
 export { StyledForm, StyledInputGroup, StyledInputForm, StyledError };

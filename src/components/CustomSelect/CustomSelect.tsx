@@ -18,6 +18,7 @@ export const CustomSelect = () => {
       options={currencies}
       value={currentCurrency}
       isMulti={false}
+      isSearchable={false}
     />
   );
 };

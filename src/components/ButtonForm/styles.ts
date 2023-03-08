@@ -6,4 +6,5 @@ export const StyledButtonForm = styled.button`
   border-radius: 10px;
   background: #23c9ff;
   color: #ffffff;
+  cursor: pointer;
 `;
